@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyers.SearchProductsActivity">
+    <RelativeLayout
+        android:id="@+id/r4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+       <EditText
+           android:id="@+id/txtSearchProducts"
+           android:layout_width="290dp"
+           android:layout_height="wrap_content"
+           android:hint="Product Name"
+           android:textSize="18sp"
+           android:layout_marginStart="5dp"
+           android:layout_centerVertical="true"
+           android:textStyle="bold"
+           android:textColorHint="@color/colorPrimaryDark"
+           android:background="#fff"
+           android:padding="9dp"
+           />
+        <Button
+            android:id="@+id/btnSearchProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="9dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/buttons"
+            android:layout_toRightOf="@+id/txtSearchProducts"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/r4"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

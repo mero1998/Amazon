@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyers.SettingsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+       android:id="@+id/app_bar_settings"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <TextView
+                   android:id="@+id/tvCloseSetting"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Close"
+                   android:textColor="#fff"
+                   android:textSize="17sp"
+                   android:textStyle="bold"
+                   android:layout_alignParentStart="true"/>
+               <TextView
+                   android:id="@+id/tvUpdateSetting"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Update"
+                   android:textColor="#fff"
+                   android:textSize="17sp"
+                   android:textStyle="bold"
+                   android:layout_marginRight="10dp"
+                   android:layout_alignParentEnd="true"/>
+
+           </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgSettingProfile"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/app_bar_settings"
+        android:src="@drawable/pic"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/tvChangeImgProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Image"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"
+        android:textColor="#000"
+        android:layout_below="@+id/imgSettingProfile"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/txtPhoneNumberSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvChangeImgProfile"
+        android:hint="Phone Number ..."
+        android:layout_margin="15dp"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/txtFullNameSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPhoneNumberSetting"
+        android:hint="Full Name ..."
+        android:layout_margin="15dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/txtAddressSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtFullNameSetting"
+        android:hint="Address ..."
+        android:layout_margin="15dp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnSecurityQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAddressSetting"
+        android:text="Set Security Question"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        android:layout_margin="15dp"
+        android:padding="10dp"/>
+
+</RelativeLayout>
